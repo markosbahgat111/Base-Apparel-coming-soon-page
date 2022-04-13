@@ -1,0 +1,180 @@
+.main_container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: url('../assets/images/bg-pattern-desktop.svg') no-repeat, linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)) no-repeat;
+  background-size: contain, contain;
+  .img_container{
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    *{
+      object-fit: cover;
+      width: auto;
+      height: 100vh;
+    }
+  }
+  .content_container{
+    width: 60vw;
+    height: 95vh;
+    padding: 3em 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+    .logo_container{
+      position: relative;
+      width: 30%;
+      height: 10%;
+      *{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text_container{
+      text-align: left;
+      h1{
+        font-size: 80px;
+        letter-spacing: 10px;
+        font-weight: 300;
+        color: hsl(0, 36%, 70%);
+        line-height: 90px;
+        strong{
+          color:hsl(0, 6%, 24%) ;
+        }
+      }
+      p{
+        color: hsl(0, 36%, 70%);
+        width: 70%;
+        margin-bottom: 2em;
+      }
+      div{
+        width: 70%;
+        height: 50px;
+        border-radius: 25px;
+        background-color: transparent;
+        border: 1px solid hsl(0, 36%, 70%);
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2em;
+        input{
+          background-color: transparent;
+          width: 75%;
+          height: 100%;
+        }
+        input:focus{
+          outline: none;
+        }
+        .arrow_container{
+          width: 25%;
+          padding: 0;
+          background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          *{
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1000px){
+  .main_container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    background: url('../assets/images/bg-pattern-desktop.svg') no-repeat, linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)) no-repeat;
+    background-size: contain, contain;
+    .img_container{
+      position: relative;
+      width: 100vw;
+      height: 40vh;
+      *{
+        object-fit: cover;
+      }
+    }
+    .content_container{
+      width: 80%;
+      height: 80vh;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+      margin:auto;
+      .logo_container{
+        display: none;
+      }
+      .text_container{
+        text-align: center;
+        h1{
+          font-size: 60px;
+          letter-spacing: 10px;
+          font-weight: 300;
+          color: hsl(0, 36%, 70%);
+          line-height: 70px;
+          strong{
+            color:hsl(0, 6%, 24%) ;
+          }
+        }
+        p{
+          color: hsl(0, 36%, 70%);
+          width: 100%;
+          margin-bottom: 2em;
+        }
+        div{
+          width: 100%;
+          height: 50px;
+          border-radius: 25px;
+          background-color: transparent;
+          border: 1px solid hsl(0, 36%, 70%);
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 2em;
+          input{
+            background-color: transparent;
+            width: 75%;
+            height: 100%;
+          }
+          input:focus{
+            outline: none;
+          }
+          .arrow_container{
+            width: 25%;
+            padding: 0;
+            background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            *{
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
